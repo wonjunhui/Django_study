@@ -78,6 +78,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        # 'NAME': 'djangogirls',
+        # 'USER': 'name',
+        # 'PASSWORD': '',
+        # 'HOST': 'localhost',
+        # 'PORT': '',
     }
 }
 
@@ -113,6 +119,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+LOGIN_REDIRECT_URL = '/'
 
 
 # Static files (CSS, JavaScript, Images)
